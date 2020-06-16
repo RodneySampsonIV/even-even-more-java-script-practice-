@@ -1,44 +1,66 @@
+
 // Reviewing the big picture!
 // For these first few questions, write a few sentences to explain your answers and post those directly in your comment at the bottom of this page (along with the links to your code for the other solutions). It's OK to do some research if you need a refresher -- just be sure to cite your sources!
 
 // 1. What are arrays in JavaScript and why are they useful?
-
+console.log("an array holds multiple elements or variables")
 // 2. What are objects in JavaScript and why are they useful?
-
+console.log("an object holds properties and methods ")
 // 3. What are a couple of key differences between objects and arrays? (And can you find any good examples or metaphors that illustrate the difference?)
+console.log("an object gives you the ability to assoiciate a property name with a value, arrays are typically used for a ordered list of items")
 
 // 4. What is the index of an array? What is it used for?
-
+console.log("the index of an array is the location of a value in it, it is used for locating stuff in a array based off a numerical value, for example 'array[0]' will grab the first value in the array")
 // 5. What is a property?
-
+console.log("a property is assoiciation between a key and value")
 // 6. What is a method?
-
+console.log("methods are actions you can use on objects")
 // Review of arrays
+
 // ✏️ Write and test your answers for this section here: https://repl.it/IlVK/0
 // And remember to click "Save" at the top to save your progress and save the URL! When you're done, save it again, copy the links to your solutions, and paste them all into your comment on the bottom of this page.
 
 // 7. Create an array named colors that contains five different names of colors as strings.
-
+let colors = ['blue', 'green', 'yellow', 'orange', 'red',]
 // 8. Access the first color in the array and print it to the console using console.log()
-
+console.log(colors[0])
 // 9. Now do the same with the third color in the list. (Remember that array indexes start at 0, not at 1!)
-
+console.log(colors[2])
 // 10. Write one line of code that changes the value of the last color in the list to "ultraviolet" (overwriting the previous value).
-
+colors.push("ultraviolet")
+console.log(colors)
 // 11. Create a new variable called fourthColor and set it equal to the fourth color in the list.
-
+let fourthColor = colors[3]
 // 12. Add another color to the end of the list.
-
+colors.push("ultrablue")
+console.log(colors)
 // 13. Add another color to the beginning of the list.
-
+colors.unshift("darkgreen")
+console.log(colors)
 // 14. Print the length of the array to the console with console.log()
-
+console.log(colors.length)
 // 15. Remove the last color from the end of list, and then print the length of the array to the console one more time.
-
+colors.pop()
+console.log(colors)
 // 16. Write a for loop to iterate through every color in the array and print each color's value to the console.
 
-// 17. Copying from that loop you just wrote, modify it to print every color's value and every color's index in this format: 3, purple or 0, blue etc.
 
+
+function forloop() {
+    for (let i = 0; i > 7; index++) {
+        console.log(color)
+        // let index = colors[0];
+        colors.forEach(element => console.log(i) );        
+    }
+}
+forloop(colors)
+// 17. Copying from that loop you just wrote, modify it to print every color's value and every color's index in this format: 3, purple or 0, blue etc.
+function alsoAForLoop(){
+    for (let index = 0; index >= 7; index++){
+        let index = index[0]
+        console.log(index)
+    }
+}
 // 18. Create a variable named lastColor that will always point to the last element of the colors array, no matter how many colors are in the list. (Hint: make use of the array's length property for this!)
 
 // ✔️ SOLUTION for array review problems: https://repl.it/IlVK/2
@@ -129,32 +151,32 @@
 
 
 
-var gunter = {
-  name: "Gunter",
-  origin: "Adventure Time",
-  canFly: false,
-  sayHello: function () {
-    console.log("QUACK!!!");
-  }
-};
+// var gunter = {
+//   name: "Gunter",
+//   origin: "Adventure Time",
+//   canFly: false,
+//   sayHello: function () {
+//     console.log("QUACK!!!");
+//   }
+// };
 
-var ramon = {
-  name: "Ramón",
-  origin: "Happy Feet",
-  canFly: true,
-  sayHello: function () {
-    console.log("Estoy encantado de conocerle.");
-  }
-};
+// var ramon = {
+//   name: "Ramón",
+//   origin: "Happy Feet",
+//   canFly: true,
+//   sayHello: function () {
+//     console.log("Estoy encantado de conocerle.");
+//   }
+// };
 
-var fred = {
-  name: "Fred",
-  origin: "Sitting Ducks",
-  canFly: false,
-  sayHello: function () {
-    console.log("Hi there!");
-  }
-};
+// var fred = {
+//   name: "Fred",
+//   origin: "Sitting Ducks",
+//   canFly: false,
+//   sayHello: function () {
+//     console.log("Hi there!");
+//   }
+// };
 
 
 
